@@ -1,0 +1,26 @@
+def reverse_string(string):
+  """Đảo ngược chuỗi.
+
+  Tham số:
+    string: Chuỗi cần đảo ngược.
+
+  Trả về:
+    Chuỗi đã được đảo ngược.
+  """
+
+  reversed_string = ""
+  for i in range(len(string)-1, -1, -1):
+    reversed_string += string[i]
+
+  return reversed_string
+
+
+# Ví dụ sử dụng
+
+string = ("'a': 1, 'b': 2, 'c': 3")
+
+reversed_string = reverse_string(string)
+
+# In kết quả
+
+print(f"Chuỗi đảo ngược: {reversed_string}")

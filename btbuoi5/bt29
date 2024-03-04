@@ -1,0 +1,18 @@
+def get_diagonal(input_tuple):
+  """
+  Hàm này lấy các phần tử đường chéo của một tuple tuple.
+
+  Tham số:
+    input_tuple: Tuple tuple.
+
+  Trả về:
+    Tuple chứa các phần tử đường chéo của input_tuple.
+  """
+  output_tuple = tuple(sub_tuple[i] for i, sub_tuple in enumerate(input_tuple))
+  return output_tuple
+
+# Ví dụ
+input_tuple = ((1, 2, 3), (4, 5, 6), (7, 8, 9))
+output_tuple = get_diagonal(input_tuple)
+
+print(output_tuple)

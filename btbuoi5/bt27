@@ -1,0 +1,18 @@
+# tuple ban đầu
+tuple_ban_dau = (1, 2, 3)
+
+# giá trị cần chèn
+gia_tri_can_chen = 4
+
+# chuyển đổi tuple sang list
+list_tam = list(tuple_ban_dau)
+
+# chèn giá trị vào đầu list
+list_tam.insert(0, gia_tri_can_chen)
+
+# chuyển đổi list sang tuple
+tuple_moi = tuple(list_tam)
+
+# in tuple mới
+print(tuple_moi)
+

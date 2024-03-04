@@ -1,0 +1,27 @@
+def find_max_value(dict):
+  """Tìm giá trị lớn nhất trong từ điển.
+
+  Tham số:
+    dict: Từ điển.
+
+  Trả về:
+    Giá trị lớn nhất.
+  """
+
+  max_value = None
+  for value in dict.values():
+    if max_value is None or value > max_value:
+      max_value = value
+
+  return max_value
+
+
+# Ví dụ sử dụng
+
+dict = {'a': 1, 'b': 2, 'c': 3}
+
+max_value = find_max_value(dict)
+
+# In kết quả
+
+print(f"Giá trị lớn nhất: {max_value}")

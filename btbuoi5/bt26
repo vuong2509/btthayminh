@@ -1,0 +1,27 @@
+def sum_product(input_tuple):
+  """
+  Hàm tính tổng và tích của các phần tử trong tuple.
+
+  Tham số:
+    input_tuple (tuple): Tuple chứa các số.
+
+  Trả về:
+    tuple: Tuple chứa hai giá trị: tổng và tích của các phần tử trong tuple.
+  """
+  sum_result = 0
+  product_result = 1
+
+  for element in input_tuple:
+    sum_result += element
+    product_result *= element
+
+  return sum_result, product_result
+
+
+# Ví dụ sử dụng
+input_tuple = (1, 2, 3, 4)
+
+sum_result, product_result = sum_product(input_tuple)
+
+print(f"Tổng: {sum_result}")
+print(f"Tích: {product_result}")

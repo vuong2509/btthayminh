@@ -1,0 +1,17 @@
+# Hàm để in ra các giá trị trong tuple
+def print_tuple(tuple):
+    for value in tuple:
+        print(value)
+
+# Tuple ban đầu
+tuple_ban_dau = ("Hello", "World", "from", "Python")
+
+# In ra các giá trị trong tuple ban đầu
+print_tuple(tuple_ban_dau)
+
+# Chèn giá trị "!" vào đầu tuple
+tuple_moi = ("")
+
+# In ra các giá trị trong tuple mới
+print_tuple(tuple_moi)
+

@@ -1,0 +1,36 @@
+def merge_dicts(dict1, dict2):
+  """Hợp nhất hai từ điển và cộng tổng giá trị của các khóa chung.
+
+  Tham số:
+    dict1: Từ điển đầu tiên.
+    dict2: Từ điển thứ hai.
+
+  Trả về:
+    Từ điển hợp nhất.
+  """
+
+  merged_dict = {}
+  for key in dict1:
+    if key in dict2:
+      merged_dict[key] = dict1[key] + dict2[key]
+    else:
+      merged_dict[key] = dict1[key]
+
+  for key in dict2:
+    if key not in merged_dict:
+      merged_dict[key] = dict2[key]
+
+  return merged_dict
+
+
+# Ví dụ sử dụng
+
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'b': 3, 'c': 4, 'd': 5}
+
+merged_dict = merge_dicts(dict1, dict2)
+
+# In kết quả
+
+for key, value in merged_dict.items():
+  print(f"{key}: {value}")
